@@ -7,6 +7,10 @@ permalink: /
 #attribution{
     visibility: hidden;
 }    
+
+element.style {
+    visibility: hidden;
+}
 </style>
 
 {% include landing.html %}

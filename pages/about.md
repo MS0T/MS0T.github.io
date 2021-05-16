@@ -5,6 +5,16 @@ permalink: /about/
 weight: 3
 ---
 
+<style>
+#attribution{
+    visibility: hidden;
+}    
+
+element.style {
+    visibility: hidden;
+}
+</style>
+
 # **About Me**
 
 Hi I am **{{ site.author.name }}**,<br>
