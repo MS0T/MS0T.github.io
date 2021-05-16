@@ -10,7 +10,7 @@ weight: 3
     visibility: hidden;
 }    
 
-element.style {
+.text-muted {
     visibility: hidden;
 }
 </style>

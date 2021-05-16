@@ -8,7 +8,7 @@ permalink: /
     visibility: hidden;
 }    
 
-element.style {
+.text-muted {
     visibility: hidden;
 }
 </style>
