@@ -6,6 +6,16 @@ color: primary
 description: My journey in developing a small desktop application in Electron. This project is meant to be a lightweight serialport console, which can easily be modified given that I want to add further functionality.
 ---
 
+<style>
+#attribution{
+    visibility: hidden;
+}    
+
+.text-muted {
+    visibility: hidden;
+}
+</style>
+
 This blog post is meant to document the process of developing an application using Electron. I won't delve to deep into the logistics of how Electron works, however I'll include some resources that I found useful below. The structure of this post will be a mix of tutorial and insight.
 
 Electron: [Quick Start Guide](https://www.electronjs.org/docs/tutorial/quick-start#main-and-renderer-processes)
@@ -492,7 +502,7 @@ function lightMode() {
 }
 ```
 
-{% include elements/figure.html image="images/Blog-SerialPort-img1.png" %}
+{% include elements/figure.html image="/images/Blog-SerialPort-img1.png" %}
 
 ## Write test script for serial device
 
@@ -531,7 +541,7 @@ void writeData() {
 }
 ```
 
-{% include elements/figure.html image="images/Blog-SerialPort-img3.png" %}
+{% include elements/figure.html image="/images/Blog-SerialPort-img3.png" %}
 
 This script simply reads in a single char and echoes it back to the application. The goal of this test is to simply prove the functionality of the application, however it should be fairly evident how it can be modified for reading/writing full strings of text.
 
