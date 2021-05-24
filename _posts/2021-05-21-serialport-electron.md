@@ -1,5 +1,5 @@
 ---
-title: Serialport Access w/ Electron
+title: Serialport Access with Electron
 tags: [Electron, JavaScript, Desktop Application, Node.js, UART]
 style: border
 color: primary
@@ -16,7 +16,7 @@ description: My journey in developing a small desktop application in Electron. T
 }
 </style>
 
-This blog post is meant to document the process of developing an application using Electron. I won't delve to deep into the logistics of how Electron works, however I'll include some resources that I found useful below. The structure of this post will be a mix of tutorial and insight.
+This blog post is meant to document the process of developing an application using Electron. I won't delve too deep into the logistics of how Electron works, however I'll include some resources that I found useful below. The structure of this post will be a mix of tutorial and insight.
 
 Electron: [Quick Start Guide](https://www.electronjs.org/docs/tutorial/quick-start#main-and-renderer-processes)
 
@@ -30,7 +30,7 @@ Gustavo Machado: [Node.js via Serialport](https://medium.com/@machadogj/arduino-
 
 ## The Setup
 
-It goes with out saying—verify that you have [Node.js](https://nodejs.org/en/) on your machine. From here we have a few options to how we want to start our project:
+It goes with out saying—verify that you have [Node.js](https://nodejs.org/en/) on your machine. From here, we have a few options as to how we want to start our project:
 
 ### Build Project Directory
 
@@ -43,7 +43,7 @@ $ mkdir <project-name> && cd <project-name>
 $ npm install && npm start
 ```
 
-1. Clone a prebuilt Electron repo
+2. Clone a prebuilt Electron repo
 
 ```cli
 # Clone the Quick Start repository or the Serialport repository
@@ -108,11 +108,11 @@ The following is a fairly standard setup for window creation—to which there ar
 
 1. The main application window of our program is created, with our preload.js having run in this process. Then the renderer (index.js in our case) is loaded into that primed window.
 
-1. DevTools are currently disabled, however by un-commenting `mainWindow.webContents.openDevTools()` you can more effectively and efficiently edit the html and css of your renderer process(es).
+2. DevTools are currently disabled, however by un-commenting `mainWindow.webContents.openDevTools()` you can more effectively and efficiently edit the html and css of your renderer process(es).
 
-1. `app.allowRendererProcessReuse=false` is a must in order to load the serialport library into the renderer process. It has been marked as a deprecated flag on the Github Issues page, however it still appears to be necessary in some builds.
+3. `app.allowRendererProcessReuse=false` is a must in order to load the serialport library into the renderer process. It has been marked as a deprecated flag on the Github Issues page, however it still appears to be necessary in some builds.
 
-1. Presented are two ways of quitting the app: the first, which is commented, is the standard for ending application processes in MacOS—application remains active until explicitly terminated with Cmd-Q; the second, which is not commented, terminates the application once all windows are closed. Since this application is quite small and lacks many background processes, I elected to use the latter of the two conventions.
+4. Presented are two ways of quitting the app: the first, which is commented, is the standard for ending application processes in MacOS—application remains active until explicitly terminated with Cmd-Q; the second, which is not commented, terminates the application once all windows are closed. Since this application is quite small and lacks many background processes, I elected to use the latter of the two conventions.
 
 ```javascript
 // Keep a global reference of the window object, if you don't, the window will
