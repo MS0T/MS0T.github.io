@@ -18,7 +18,6 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-  # - pages/blog.html
 
 
 ### Author Info ###
@@ -55,6 +54,8 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
+  elements:
+    output: true
 
 
 ### Disqus ###
