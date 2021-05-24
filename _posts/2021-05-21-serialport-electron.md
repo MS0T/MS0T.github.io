@@ -19,9 +19,13 @@ description: My journey in developing a small desktop application in Electron. T
 This blog post is meant to document the process of developing an application using Electron. I won't delve to deep into the logistics of how Electron works, however I'll include some resources that I found useful below. The structure of this post will be a mix of tutorial and insight.
 
 Electron: [Quick Start Guide](https://www.electronjs.org/docs/tutorial/quick-start#main-and-renderer-processes)
+
 Node Serialport: [Serialport Docs](https://www.npmjs.com/package/serialport-builds-electron)
+
 MBED PC-USB: [Board to PC communication over USB](https://os.mbed.com/docs/mbed-os/v6.10/program-setup/serial-communication.html)
+
 Steven Lambert: [Packaging Electron](https://stevenklambert.com/writing/comprehensive-guide-building-packaging-electron-app/)
+
 Gustavo Machado: [Node.js via Serialport](https://medium.com/@machadogj/arduino-and-node-js-via-serial-port-bcf9691fab6a)
 
 ## The Setup
@@ -510,7 +514,7 @@ Given that we've been testing the functionality of our application throughout de
 
 ```c
 char receivedChar;
-boolean newData = false;
+bool newData = false;
 
 void readChar();
 void writeData(); 
@@ -561,3 +565,11 @@ $ npx electron-forge import
 ```
 
 At this point you should verify that the import was successful by checking the package.json file. The import should have added a whole config section to the .json file, which defines how the application will be packaged. Once set up, you can run `npm run make` to build a Mac package and a zip file containing the Mac package of your app, assuming that you are on a Mac. This will not build a Windows and/or Linux package. If you are having difficulties with electron-forge, I have also had some success with electron-packager.
+
+You will also want to create some icon art and include that in a separate assets directory in order to be packaged alongside the rest of the application. Here is a quick icon that I put to together for my application:
+
+{% include elements/figure.html image="/images/Blog-SerialPort-icon.png" %}
+
+Each platform uses a different extension for the icon: .icns for Mac, .ico for Windows, and .png for Linux.  
+
+Thank you for reading this small venture of mine. I hope you found an inkling of it useful whether it be in a current or future project.
