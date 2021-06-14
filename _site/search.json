@@ -1,7 +1,7 @@
 [
   
     {
-      "title"    : "Serialport Access w/ Electron",
+      "title"    : "Serialport Access with Electron",
       "category" : "",
       "tags"     : "Electron, JavaScript, Desktop Application, Node.js, UART",
       "url"      : "/blog/serialport-electron",

@@ -20,10 +20,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Serialport Access w/ Electron">
+  <meta property="og:title" content="Serialport Access with Electron">
   <meta property="og:description" content="My journey in developing a small desktop application in Electron. This project is meant to be a lightweight serialport console, which can easily be modified ...">
 
-  <title>Serialport Access w/ Electron</title>
+  <title>Serialport Access with Electron</title>
   <meta name="description" content="My journey in developing a small desktop application in Electron. This project is meant to be a lightweight serialport console, which can easily be modified ...">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -71,7 +71,7 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 post">
-  <h1><b>Serialport Access w/ Electron</b></h1>
+  <h1><b>Serialport Access with Electron</b></h1>
 
 <p class="post-metadata text-muted">
   21 May 2021 -  
@@ -110,7 +110,7 @@
 }
 </style>
 
-<p>This blog post is meant to document the process of developing an application using Electron. I won’t delve to deep into the logistics of how Electron works, however I’ll include some resources that I found useful below. The structure of this post will be a mix of tutorial and insight.</p>
+<p>This blog post is meant to document the process of developing an application using Electron. I won’t delve too deep into the logistics of how Electron works, however I’ll include some resources that I found useful below. The structure of this post will be a mix of tutorial and insight.</p>
 
 <p>Electron: <a href="https://www.electronjs.org/docs/tutorial/quick-start#main-and-renderer-processes">Quick Start Guide</a></p>
 
@@ -124,7 +124,7 @@
 
 <h2 id="the-setup">The Setup</h2>
 
-<p>It goes with out saying—verify that you have <a href="https://nodejs.org/en/">Node.js</a> on your machine. From here we have a few options to how we want to start our project:</p>
+<p>It goes with out saying—verify that you have <a href="https://nodejs.org/en/">Node.js</a> on your machine. From here, we have a few options as to how we want to start our project:</p>
 
 <h3 id="build-project-directory">Build Project Directory</h3>
 
@@ -616,7 +616,7 @@ $ npm rebuild
 <p>Given that we’ve been testing the functionality of our application throughout development, we should finished with everything we sought out to implement. From here we should test our application with an actual use case—I have elected to write a simple arduino script.</p>
 
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span> <span class="n">receivedChar</span><span class="p">;</span>
-<span class="n">boolean</span> <span class="n">newData</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="n">bool</span> <span class="n">newData</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
 
 <span class="kt">void</span> <span class="n">readChar</span><span class="p">();</span>
 <span class="kt">void</span> <span class="n">writeData</span><span class="p">();</span> 

@@ -1,11 +1,25 @@
-- name: HTML5/CSS3
-  percentage: 90
-  color: danger
-
-- name: Go
-  percentage: 80
-  color:
+# Get Colors from : https://brandcolors.net/
 
 - name: Python
+  percentage: 75
+  color: success
+
+- name: Java
   percentage: 70
-  color: dark
+  color: danger
+
+- name: C/C++
+  percentage: 80
+  color: info
+
+- name: SystemVerilog
+  percentage: 80
+  color: warning  
+
+- name: HTML5/CSS3
+  percentage: 70
+  color: primary
+
+- name: Javascript
+  percentage: 65
+  color: success
