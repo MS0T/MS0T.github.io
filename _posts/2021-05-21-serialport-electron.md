@@ -30,7 +30,7 @@ Gustavo Machado: [Node.js via Serialport](https://medium.com/@machadogj/arduino-
 
 ## The Setup
 
-It goes with out saying—verify that you have [Node.js](https://nodejs.org/en/) on your machine. From here, we have a few options as to how we want to start our project:
+It goes without saying—verify that you have [Node.js](https://nodejs.org/en/) on your machine. From here, we have a few options as to how we want to start our project:
 
 ### Build Project Directory
 
